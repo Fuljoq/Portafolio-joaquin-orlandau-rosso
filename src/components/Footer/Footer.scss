@@ -1,0 +1,60 @@
+.footer {
+  background: #0a0e27;
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+
+  .footer-content {
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+
+      .social-link {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        color: white;
+        font-size: 1.3rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          transform: translateY(-5px) rotate(360deg);
+          box-shadow: 0 10px 30px rgba(102, 126, 234, 0.5);
+        }
+      }
+    }
+
+    .footer-text {
+      p {
+        font-size: 1rem;
+        opacity: 0.8;
+
+        .heart-icon {
+          color: #f093fb;
+          animation: heartbeat 1.5s ease-in-out infinite;
+          display: inline-block;
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  10%, 30% {
+    transform: scale(1.1);
+  }
+  20% {
+    transform: scale(0.9);
+  }
+}
