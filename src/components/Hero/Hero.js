@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaArrowDown } from 'react-icons/fa';
-import Typed from 'react-typed';
 import { Link } from 'react-scroll';
 import Tilt from 'react-parallax-tilt';
 import { toast } from 'react-toastify';
