@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaCode, FaLaptopCode, FaRocket, FaCoffee, FaGraduationCap, FaBriefcase } from 'react-icons/fa';
 import CountUp from 'react-countup';
+import cvPdf from './CV Joaquin Orlandau Rosso actualizado (Dev - Spa-  202503).pdf';
 import './About.scss';
 
 const About = ({ language }) => {
@@ -91,7 +92,7 @@ const About = ({ language }) => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className="image-wrapper">
-              <img src="/imgs/fotasa.jpg" alt="Foto sobre mí" />
+              <img src="/imgs/imagen%20mejor.png" alt="Foto sobre mí" />
               <div className="image-overlay"></div>
               <div className="image-frame"></div>
             </div>
@@ -138,7 +139,7 @@ const About = ({ language }) => {
             </div>
 
             <div className="about-buttons">
-              <a href="/cv.pdf" download className="btn btn-primary">
+              <a href={cvPdf} download="CV-Joaquin-Orlandau-Rosso.pdf" className="btn btn-primary">
                 {language === 'es' ? 'Descargar CV' : 'Download CV'}
               </a>
               <a href="#contact" className="btn btn-outline">

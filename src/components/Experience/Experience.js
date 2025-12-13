@@ -30,6 +30,21 @@ const Experience = ({ language }) => {
       type: 'education',
       title:
         language === 'es'
+          ? 'Licenciatura en Programación'
+          : "Bachelor's Degree in Programming",
+      company: 'UCES',
+      period: '2024 - 2026',
+      description:
+        language === 'es'
+          ? 'Formación universitaria en programación con enfoque en fundamentos, algoritmos y desarrollo de software.'
+          : 'University education in programming focused on fundamentals, algorithms, and software development.',
+      icon: <FaGraduationCap />,
+      skills: ['Programación', 'Algoritmos', 'Bases de Datos', 'Desarrollo de Software']
+    },
+    {
+      type: 'education',
+      title:
+        language === 'es'
           ? 'Carrera de Desarrollo Web / Full Stack'
           : 'Web / Full Stack Development Career',
       company: 'Digital House',

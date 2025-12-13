@@ -129,7 +129,7 @@ const Hero = ({ language }) => {
               <div className="hero-avatar">
                 <div className="avatar-glow"></div>
                 <img 
-                  src="/imgs/fotasa.jpg" 
+                  src="/imgs/imagen%20mejor.png" 
                   alt="Foto de perfil"
                 />
               </div>
